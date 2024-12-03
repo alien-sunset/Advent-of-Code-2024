@@ -1,0 +1,30 @@
+this is my first time really playing with regex, I’ve heard of it before and recognized the notepad++ (my txt editor of choice) had a field for it in it's find function., but beyond that hadn't really poked it much.  I’m very proud of myself for recognizing that it was probably what I was going to need for this challenge. 
+
+but Boy Howdy was reading up on it both fascinating and confusing! 
+I’m def going to spend some more time with the docs because i didn't go very much further than what i needed here, but I’d like to at least skim through and familiarize myself a little better for future endeavors.
+
+so, what I finally came up with was: 
+
+
+part one:
+copy past the input into notepad ++
+
+find: mul\(.{1,3},.{1,3}\) mark all, copy marked. then paste into calc. do math there
+
+
+part two took some extra fiddling, that final un-canceled "don't" caught me up, and I think there must be a better way to phrase the regex to get it all in one pass, but my brain was turning to mush by then:
+
+
+\r  replace ""
+\n replace ""
+don't\(\).+?do\(\)  replace ""
+don't\(\).+   replace ""
+
+
+mul\(.{1,3},.{1,3}\) mark all, copy marked. then paste into calc. do math there
+
+Tah dah.
+
+
+
+this was DEF more manual back and forth than necessary and a very good place to try to figure out how to plug all of this into a JS code or something to run all the bits automatically, but i don't know enough of that atm to even have an inkling of how to put it all together and I have decided that I just do not have enough time or energy in a day to take as long as I would need to research and learn it all, but i think these are all going to be re-visited at a later date when I do have the time to do it all more slowly and take to time to properly digest it.
